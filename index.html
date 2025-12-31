@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VigilixHub Manpower</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0f0f0f',
+                            red: '#D90429',
+                            darkRed: '#8D0801',
+                            gray: '#F3F4F6'
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-brand-black overflow-x-hidden antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Top Bar -->
+    <div
+        class="bg-gradient-to-r from-brand-black via-gray-900 to-brand-black text-white text-xs py-2.5 hidden md:block relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse-subtle">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center relative z-10">
+            <div class="flex items-center space-x-6">
+                <a href="tel:+919876543210"
+                    class="group flex items-center gap-2 hover:text-brand-red transition-all duration-300 cursor-pointer">
+                    <div
+                        class="w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center group-hover:bg-brand-red/30 transition-all">
+                        <i
+                            class="fa-solid fa-phone text-brand-red text-[10px] group-hover:rotate-12 transition-transform"></i>
+                    </div>
+                    <span class="font-medium">+91 7868043538</span>
+                </a>
+                <a href="mailto:info@vhub.com"
+                    class="group flex items-center gap-2 hover:text-brand-red transition-all duration-300 cursor-pointer">
+                    <div
+                        class="w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center group-hover:bg-brand-red/30 transition-all">
+                        <i class="fa-solid fa-envelope text-brand-red text-[10px]"></i>
+                    </div>
+                    <span class="font-medium">support@vigilixhub.in</span>
+                </a>
+                <span class="flex items-center gap-2 text-gray-400">
+                    <i class="fa-solid fa-location-dot text-brand-red text-[10px]"></i>
+                    <span>Ramanathapuram, India</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-gray-400 font-medium">Connect with us:</span>
+                <div class="flex space-x-2">
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-twitter text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav id="navbar" class="sticky top-0 z-50 glass-nav transition-all duration-500 animate-slide-down">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 lg:h-24">
+
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 z-50 group">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-brand-red to-pink-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300">
+                        </div>
+                        <img class="w-20" src="/assets/images/vHub-logo.svg" alt="">
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="#"
+                        class="nav-link px-5 py-2 text-sm font-semibold text-gray-700 hover:text-brand-red transition-colors">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="nav-link px-5 py-2 text-sm font-semibold text-gray-700 hover:text-brand-red transition-colors">
+                        About Us
+                    </a>
+                    <a href="#"
+                        class="nav-link px-5 py-2 text-sm font-semibold text-gray-700 hover:text-brand-red transition-colors">
+                        Services
+                    </a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="#"
+                        class="group relative px-6 py-2.5 bg-gradient-to-r from-brand-red to-red-600 text-white rounded-xl text-sm font-bold overflow-hidden shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 hover:-translate-y-0.5">
+                        <span class="relative z-10 flex items-center gap-2">
+                            Contact Us
+                            <i
+                                class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-brand-darkRed to-red-700 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="lg:hidden relative z-50 p-2 text-brand-black hover:text-brand-red transition-colors">
+                    <div class="menu-icon text-current">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="progress-bar"
+            class="h-0.5 bg-gradient-to-r from-brand-red via-pink-500 to-red-600 transform origin-left scale-x-0 transition-transform duration-300">
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-black/40 backdrop-blur-md z-40 opacity-0 invisible transition-all duration-500"></div>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar"
+        class="fixed top-0 right-0 h-full w-full sm:w-[85%] sm:max-w-md bg-white z-50 transform translate-x-full transition-all duration-500 shadow-2xl flex flex-col">
+
+        <!-- Sidebar Header -->
+        <div class="relative p-6 bg-gradient-to-r from-brand-red to-pink-600 text-white">
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 20px 20px;">
+            </div>
+            <div class="relative flex justify-between items-center">
+                <div>
+                    <h2 class="text-2xl font-black">Menu</h2>
+                    <p class="text-sm text-white/80 font-medium mt-0.5">Navigate vHub</p>
+                </div>
+                <button id="close-menu-btn"
+                    class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-all hover:rotate-90 duration-300">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar Links -->
+        <div id="mobile-links-container"
+            class="flex-1 p-6 space-y-2 overflow-y-auto bg-gradient-to-b from-white to-gray-50">
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-100 to-pink-100 flex items-center justify-center text-brand-red group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <span>Home</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <span>Services</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <span>Find Jobs</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center text-purple-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span>Find Employees</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center text-orange-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-info-circle"></i>
+                    </div>
+                    <span>About Us</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+        </div>
+
+        <!-- Sidebar Footer -->
+        <div class="p-6 bg-gradient-to-r from-gray-900 to-brand-black space-y-3">
+            <a href="#"
+                class="block w-full py-3.5 bg-white text-brand-black text-center rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
+                <i class="fa-solid fa-user-circle"></i>
+                Login / Register
+            </a>
+            <a href="#"
+                class="block w-full py-3.5 bg-gradient-to-r from-brand-red to-red-600 text-white text-center rounded-xl font-bold hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                Contact Support
+            </a>
+            <div class="flex items-center justify-center gap-3 pt-3">
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Ends Here -->
+
+
+    <!-- Hero Section -->
+    <section
+        class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-red-50">
+
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 hero-grid-pattern opacity-40"></div>
+
+        <!-- Floating Orbs -->
+        <div
+            class="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-red-400 to-pink-600 rounded-full blur-3xl opacity-20 morph-blob">
+        </div>
+        <div class="absolute bottom-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full blur-3xl opacity-15 morph-blob"
+            style="animation-delay: 2s;"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-red-300 to-orange-400 rounded-full blur-3xl opacity-10 animate-spin-slow">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-12 lg:py-20">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+
+                <!-- Left Content -->
+                <div class="space-y-6 lg:space-y-8 text-center lg:text-left">
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-50 to-pink-50 border border-red-200/50 text-brand-red text-xs font-bold uppercase tracking-widest animate-slide-up">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-red opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-red"></span>
+                        </span>
+                        Your Trusted Server Monitoring Partner
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1
+                        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight text-brand-black animate-slide-up stagger-1">
+                        Welcome to
+                        <span class="block mt-2 gradient-text animate-gradient">
+                            VigilixHub
+                        </span>
+                        <span class="block mt-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                            Stay Ahead with <span class="relative inline-block">
+                                Proactive
+                                <svg class="absolute -bottom-2 left-0 w-full h-3 lg:h-4" viewBox="0 0 200 10"
+                                    preserveAspectRatio="none">
+                                    <path d="M0 5 Q 100 10 200 5" stroke="#DC2626" stroke-width="3" fill="none"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="block mt-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                            Server Monitoring
+                        </span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p
+                        class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed animate-slide-up stagger-2">
+                        Monitor your servers with <span class="font-semibold text-brand-red">real-time alerts</span>
+                        and comprehensive analytics. Experience peace of mind with our industry-leading monitoring
+                        platform.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div
+                        class="flex flex-col sm:flex-row gap-4 pt-4 animate-slide-up stagger-3 justify-center lg:justify-start">
+                        <a href="#"
+                            class="group relative px-8 py-4 bg-gradient-to-r from-brand-red to-red-600 text-white rounded-2xl font-bold shadow-2xl shadow-red-500/50 hover:shadow-red-500/70 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                            <span class="relative z-10 flex items-center justify-center gap-2">
+                                Get Started
+                                <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                            </span>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-brand-darkRed to-red-700 opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </a>
+                        <a href="#"
+                            class="group px-8 py-4 bg-white text-brand-black border-2 border-gray-200 rounded-2xl font-bold hover:border-brand-red hover:bg-red-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg">
+                            View Features
+                            <i
+                                class="fa-solid fa-sparkles text-brand-red group-hover:rotate-12 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual Section -->
+                <div class="relative h-[400px] sm:h-[500px] lg:h-[600px] animate-scale-in">
+                    <!-- Main Card -->
+                    <div
+                        class="absolute inset-0 lg:inset-4 bg-gradient-to-br from-white to-gray-50 rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-blue-500/5">
+                        </div>
+
+                        <!-- Dot Pattern -->
+                        <div class="absolute inset-0 opacity-30"
+                            style="background-image: radial-gradient(circle, #DC2626 1px, transparent 1px); background-size: 30px 30px;">
+                        </div>
+
+                        <!-- Center Icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative">
+                                <div
+                                    class="w-40 h-40 sm:w-48 sm:h-48 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center animate-pulse-glow shadow-2xl">
+                                    <i class="fa-solid fa-server text-5xl sm:text-6xl text-white"></i>
+                                </div>
+                                <!-- Orbiting Elements -->
+                                <div
+                                    class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-2xl flex items-center justify-center text-white shadow-xl animate-float">
+                                    <i class="fa-solid fa-chart-line text-2xl"></i>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center text-white shadow-xl animate-float-delayed">
+                                    <i class="fa-solid fa-shield-halved text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Stats Cards -->
+                    <div
+                        class="absolute top-4 sm:top-8 -right-2 sm:-right-4 glass-effect p-4 sm:p-5 rounded-2xl shadow-2xl animate-float w-48 sm:w-56">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-600 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                                <i class="fa-solid fa-circle-check text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-semibold">Uptime</p>
+                                <p
+                                    class="text-2xl font-black bg-gradient-to-r from-brand-red to-pink-600 bg-clip-text text-transparent">
+                                    99.9%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute bottom-4 sm:bottom-8 -left-2 sm:-left-4 glass-effect p-4 sm:p-5 rounded-2xl shadow-2xl animate-float-delayed w-48 sm:w-56">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                                <i class="fa-solid fa-bell text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-semibold">Instant Alerts</p>
+                                <p
+                                    class="text-2xl font-black bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                                    24/7</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-1/2 -translate-y-1/2 -right-2 sm:-right-6 glass-effect p-4 rounded-2xl shadow-2xl animate-float w-20 sm:w-24 hidden sm:block">
+                        <div class="text-center">
+                            <div
+                                class="w-12 h-12 mx-auto bg-gradient-to-br from-yellow-400 to-orange-600 rounded-xl flex items-center justify-center text-white shadow-lg mb-2">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <p class="text-lg font-black text-brand-black">4.9</p>
+                            <div class="flex justify-center gap-0.5 mt-1">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Ends Here -->
+
+
+    <!-- Why Choose VigilixHub Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+
+        <!-- Header Section -->
+        <div class="text-center mb-16 lg:mb-20 animate-fade-in-up">
+            <!-- Badge -->
+            <div
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-50 to-pink-50 border border-red-200/50 mb-6">
+                <div class="relative flex h-3 w-3">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-red opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-red"></span>
+                </div>
+                <span class="text-brand-red text-sm font-bold uppercase tracking-wider">Powerful Monitoring
+                    Solutions</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-black mb-6 leading-tight">
+                Why Choose
+                <span class="relative inline-block">
+                    <span
+                        class="bg-gradient-to-r from-brand-red via-red-500 to-pink-600 bg-clip-text text-transparent">VigilixHub</span>
+                    <svg class="absolute -bottom-2 left-0 w-full h-4" viewBox="0 0 200 10" preserveAspectRatio="none">
+                        <path d="M0 5 Q 100 10 200 5" stroke="#DC2626" stroke-width="3" fill="none"
+                            stroke-linecap="round" />
+                    </svg>
+                </span>
+                <!-- <span class="block mt-2">?</span> -->
+            </h2>
+
+            <!-- Description -->
+            <p class="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                At VigilixHub, we understand that the health of your IT infrastructure is critical to your success.
+                That's why we provide <span class="font-semibold text-brand-red">robust, real-time server monitoring
+                    solutions</span> designed to ensure your systems operate smoothly and efficiently. Our cutting-edge
+                tools keep you informed and in control, so you can focus on growing your business.
+            </p>
+        </div>
+
+        <!-- Features Grid with Accordion -->
+        <div class="grid lg:grid-cols-2 gap-8 items-start">
+
+            <!-- Left Side - Visual Element -->
+            <div class="relative h-[500px] lg:h-[700px] animate-fade-in-up stagger-2">
+                <!-- Main Decorative Card -->
+                <div class="absolute inset-0 gradient-bg rounded-3xl overflow-hidden shadow-2xl">
+                    <!-- Floating Particles -->
+                    <div class="absolute inset-0">
+                        <div class="absolute top-20 left-10 w-20 h-20 bg-white/20 rounded-full blur-xl animate-float">
+                        </div>
+                        <div class="absolute bottom-32 right-16 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-float"
+                            style="animation-delay: 1s;"></div>
+                        <div class="absolute top-40 right-20 w-16 h-16 bg-white/15 rounded-full blur-lg animate-float"
+                            style="animation-delay: 2s;"></div>
+                    </div>
+
+                    <!-- Center Content -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative">
+                            <!-- Pulse Rings -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-64 h-64 rounded-full bg-white/20 animate-pulse-ring"></div>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center" style="animation-delay: 1s;">
+                                <div class="w-64 h-64 rounded-full bg-white/20 animate-pulse-ring"></div>
+                            </div>
+
+                            <!-- Main Icon Circle -->
+                            <div
+                                class="relative w-48 h-48 bg-white rounded-full flex items-center justify-center shadow-2xl">
+                                <div
+                                    class="w-40 h-40 bg-gradient-to-br from-brand-red to-pink-600 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-heartbeat text-6xl text-white"></i>
+                                </div>
+                            </div>
+
+                            <!-- Floating Stats -->
+                            <div class="absolute -top-8 -right-8 glass-card p-4 rounded-2xl shadow-xl animate-float">
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="w-10 h-10 bg-gradient-to-br from-green-400 to-emerald-600 rounded-xl flex items-center justify-center">
+                                        <i class="fa-solid fa-check text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-semibold text-gray-500">Uptime</p>
+                                        <p class="text-xl font-black text-brand-red">99.99%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="absolute -bottom-8 -left-8 glass-card p-4 rounded-2xl shadow-xl animate-float"
+                                style="animation-delay: 1.5s;">
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="w-10 h-10 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-xl flex items-center justify-center">
+                                        <i class="fa-solid fa-bolt text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-semibold text-gray-500">Response</p>
+                                        <p class="text-xl font-black text-brand-red">&lt;1s</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-1/2 -translate-y-1/2 -right-16 glass-card p-3 rounded-xl shadow-xl animate-float"
+                                style="animation-delay: 0.5s;">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-600 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-shield-halved text-white text-2xl"></i>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-1/2 -translate-y-1/2 -left-16 glass-card p-3 rounded-xl shadow-xl animate-float"
+                                style="animation-delay: 2s;">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-600 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-chart-line text-white text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Accordion Features -->
+            <div class="space-y-4 animate-fade-in-up stagger-3">
+
+                <!-- Feature 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover-lift shadow-lg">
+                    <button onclick="toggleAccordion('acc1')"
+                        class="w-full p-6 sm:p-8 text-left flex items-start gap-4 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-brand-red to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-shield-halved text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3
+                                    class="text-xl sm:text-2xl font-bold text-brand-black group-hover:text-brand-red transition-colors">
+                                    Reliability You Can Trust
+                                </h3>
+                                <i class="fa-solid fa-chevron-down text-brand-red text-xl accordion-icon"
+                                    id="icon-acc1"></i>
+                            </div>
+                            <div id="acc1" class="accordion-content mt-4">
+                                <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                                    Our platform is designed for <span class="font-semibold text-brand-red">99.99%
+                                        uptime</span>, ensuring uninterrupted monitoring for your critical systems.
+                                    Trust in our infrastructure to keep your business running smoothly, day and night.
+                                </p>
+                                <div class="mt-4 p-4 bg-red-50 rounded-xl border border-red-100">
+                                    <div class="flex items-center gap-2 text-brand-red font-semibold mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>Key Benefits:</span>
+                                    </div>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-start gap-2">
+                                            <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                                            <span>Enterprise-grade redundancy</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                                            <span>Global server distribution</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                                            <span>Automated failover systems</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover-lift shadow-lg">
+                    <button onclick="toggleAccordion('acc2')"
+                        class="w-full p-6 sm:p-8 text-left flex items-start gap-4 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-bell text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3
+                                    class="text-xl sm:text-2xl font-bold text-brand-black group-hover:text-brand-red transition-colors">
+                                    Real-Time Alerts
+                                </h3>
+                                <i class="fa-solid fa-chevron-down text-brand-red text-xl accordion-icon"
+                                    id="icon-acc2"></i>
+                            </div>
+                            <div id="acc2" class="accordion-content mt-4">
+                                <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                                    Get instant notifications via email, SMS, or Slack when issues arise. Our <span
+                                        class="font-semibold text-brand-red">intelligent alert system</span> ensures
+                                    you're always in the loop without overwhelming you with false positives.
+                                </p>
+                                <div class="mt-4 grid grid-cols-3 gap-3">
+                                    <div
+                                        class="p-3 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl text-center border border-blue-100">
+                                        <i class="fa-solid fa-envelope text-2xl text-blue-600 mb-1"></i>
+                                        <p class="text-xs font-semibold text-gray-700">Email</p>
+                                    </div>
+                                    <div
+                                        class="p-3 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl text-center border border-green-100">
+                                        <i class="fa-solid fa-comment-sms text-2xl text-green-600 mb-1"></i>
+                                        <p class="text-xs font-semibold text-gray-700">SMS</p>
+                                    </div>
+                                    <div
+                                        class="p-3 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl text-center border border-purple-100">
+                                        <i class="fa-brands fa-slack text-2xl text-purple-600 mb-1"></i>
+                                        <p class="text-xs font-semibold text-gray-700">Slack</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover-lift shadow-lg">
+                    <button onclick="toggleAccordion('acc3')"
+                        class="w-full p-6 sm:p-8 text-left flex items-start gap-4 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-chart-line text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3
+                                    class="text-xl sm:text-2xl font-bold text-brand-black group-hover:text-brand-red transition-colors">
+                                    Advanced Analytics
+                                </h3>
+                                <i class="fa-solid fa-chevron-down text-brand-red text-xl accordion-icon"
+                                    id="icon-acc3"></i>
+                            </div>
+                            <div id="acc3" class="accordion-content mt-4">
+                                <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                                    Gain deep insights into your infrastructure with <span
+                                        class="font-semibold text-brand-red">comprehensive analytics and
+                                        reporting</span>. Track performance trends, identify bottlenecks, and make
+                                    data-driven decisions.
+                                </p>
+                                <div
+                                    class="mt-4 p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-100">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <p class="text-3xl font-black text-brand-red">15+</p>
+                                            <p class="text-sm text-gray-600">Metrics Tracked</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-3xl font-black text-brand-red">90d</p>
+                                            <p class="text-sm text-gray-600">Data Retention</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover-lift shadow-lg">
+                    <button onclick="toggleAccordion('acc4')"
+                        class="w-full p-6 sm:p-8 text-left flex items-start gap-4 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-rocket text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between">
+                                <h3
+                                    class="text-xl sm:text-2xl font-bold text-brand-black group-hover:text-brand-red transition-colors">
+                                    Easy Setup & Integration
+                                </h3>
+                                <i class="fa-solid fa-chevron-down text-brand-red text-xl accordion-icon"
+                                    id="icon-acc4"></i>
+                            </div>
+                            <div id="acc4" class="accordion-content mt-4">
+                                <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                                    Get started in minutes with our <span class="font-semibold text-brand-red">intuitive
+                                        setup process</span>. Seamlessly integrate with your existing tools and
+                                    workflows without any complex configuration.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm">
+                                        <i class="fa-brands fa-aws text-orange-500"></i> AWS
+                                    </span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm">
+                                        <i class="fa-brands fa-microsoft text-blue-500"></i> Azure
+                                    </span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm">
+                                        <i class="fa-brands fa-google text-red-500"></i> GCP
+                                    </span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm">
+                                        <i class="fa-brands fa-docker text-blue-500"></i> Docker
+                                    </span>
+                                    <span
+                                        class="px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-sm font-semibold text-gray-700 shadow-sm">
+                                        <i class="fa-solid fa-dharmachakra text-purple-500"></i> Kubernetes
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Why Choose VigilixHub Section Ends Here -->
+
+
+    <!-- Services Section Starts Here -->
+    <!-- Services Section -->
+    <section id="service" class="py-16 lg:py-24 relative overflow-hidden">
+
+        <!-- Background Elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="grid-pattern absolute inset-0"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center mb-16 lg:mb-20">
+                <!-- Badge -->
+                <div class="mb-6">
+                    <span class="section-badge">
+                        <span class="pulse-dot"></span>
+                        What We Offer
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-black mb-6 animate-fade-in-up">
+                    Our <span
+                        class="bg-gradient-to-r from-brand-red via-red-500 to-pink-600 bg-clip-text text-transparent">Services</span>
+                </h2>
+
+                <!-- Description -->
+                <p
+                    class="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up stagger-1">
+                    Comprehensive solutions tailored to keep your digital infrastructure running at peak performance
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+
+                <!-- Service 1: Website Development -->
+                <div class="service-card animate-fade-in-up stagger-1">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Website Developing</h5>
+                        <p class="text-sm text-gray-500">Custom web solutions</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                We can be packaged and customized based on client needs, providing a comprehensive
+                                solution for businesses looking to establish or improve their online presence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: UI/UX -->
+                <div class="service-card animate-fade-in-up stagger-2">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">UI/UX Design</h5>
+                        <p class="text-sm text-gray-500">Intuitive interfaces</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Designs intuitive and visually appealing interfaces to enhance user experience and
+                                engagement while optimizing usability through seamless navigation and responsive design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Marketing -->
+                <div class="service-card animate-fade-in-up stagger-3">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Marketing</h5>
+                        <p class="text-sm text-gray-500">Strategic campaigns</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Develops strategic campaigns to boost brand awareness and engage customers while
+                                strengthening retention through personalized marketing automation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Infrastructure Monitoring -->
+                <div class="service-card animate-fade-in-up stagger-4">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Infrastructure Monitoring</h5>
+                        <p class="text-sm text-gray-500">Server & network tracking</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Monitors servers, network devices, and storage systems to ensure your web hosting
+                                infrastructure runs smoothly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Performance Monitoring -->
+                <div class="service-card animate-fade-in-up stagger-5">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Performance Monitoring</h5>
+                        <p class="text-sm text-gray-500">Real-time metrics</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Tracks real-time performance metrics and historical trends to ensure your website's
+                                speed and responsiveness are optimized.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Application Monitoring -->
+                <div class="service-card animate-fade-in-up stagger-6">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-window-restore"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Application Monitoring</h5>
+                        <p class="text-sm text-gray-500">Database & CMS tracking</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Monitors applications like databases, web servers (Apache, Nginx), and CMS platforms
+                                (WordPress, Drupal) to maintain high availability and performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 7: Network Monitoring -->
+                <div class="service-card animate-fade-in-up stagger-7">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Network Monitoring</h5>
+                        <p class="text-sm text-gray-500">Protocol & device tracking</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Monitors network devices and protocols (such as DNS, HTTP, HTTPS) to ensure your website
+                                is always accessible to users, detecting and resolving network bottlenecks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 8: Log Management -->
+                <div class="service-card animate-fade-in-up stagger-8">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Log Management</h5>
+                        <p class="text-sm text-gray-500">Analysis & troubleshooting</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Collects, stores, and analyzes logs (server logs, web application logs) for
+                                troubleshooting and auditing, helping developers identify errors or security
+                                vulnerabilities in website code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 9: Cloud Monitoring -->
+                <div class="service-card animate-fade-in-up stagger-9">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Cloud Monitoring</h5>
+                        <p class="text-sm text-gray-500">AWS, Azure, GCP</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Monitors cloud-based hosting environments (AWS, Azure, Google Cloud) where your website
+                                is hosted, providing insights into resource usage and potential issues affecting web
+                                application uptime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 10: Dashboards & Reporting -->
+                <div class="service-card animate-fade-in-up stagger-10">
+                    <div class="service-content">
+                        <div class="service-icon-wrapper mb-6">
+                            <div class="service-icon-bg"></div>
+                            <div class="service-icon">
+                                <i class="fa-solid fa-chart-pie"></i>
+                            </div>
+                        </div>
+                        <h5 class="text-xl font-bold text-brand-black mb-3">Dashboards & Reporting</h5>
+                        <p class="text-sm text-gray-500">Customizable insights</p>
+                    </div>
+                    <div class="service-overlay">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl mt-1 flex-shrink-0"></i>
+                            <p class="text-sm leading-relaxed">
+                                Customizable dashboards provide detailed system health, performance insights, and web
+                                traffic data to improve the management and optimization of websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="mt-16 lg:mt-20 text-center animate-fade-in-up stagger-10">
+                <div class="inline-flex flex-col sm:flex-row gap-4">
+                    <a href="#"
+                        class="group relative px-8 py-4 bg-gradient-to-r from-brand-red to-red-600 text-white rounded-2xl font-bold shadow-2xl shadow-red-500/50 hover:shadow-red-500/70 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <span class="relative z-10 flex items-center justify-center gap-2">
+                            Explore All Services
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-brand-darkRed to-red-700 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="group px-8 py-4 bg-white text-brand-black border-2 border-gray-200 rounded-2xl font-bold hover:border-brand-red hover:bg-red-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg">
+                        Get Custom Quote
+                        <i
+                            class="fa-solid fa-file-invoice text-brand-red group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Services Section Ends Here -->
+
+
+    <!-- Feature Section Starts Here -->
+    <!-- Comprehensive Server Monitoring Section -->
+    <section class="py-16 lg:py-24 relative overflow-hidden">
+        <!-- Decorative Background Elements -->
+        <div class="decorative-circle w-96 h-96 bg-red-500 -top-48 -right-48 absolute animate-pulse-glow"></div>
+        <div class="decorative-circle w-64 h-64 bg-pink-500 -bottom-32 -left-32 absolute animate-pulse-glow"
+            style="animation-delay: 1s;"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-50 to-pink-50 border border-red-200/50 mb-6">
+                    <span class="pulse-dot"></span>
+                    <span class="text-brand-red text-sm font-bold uppercase tracking-wider">Core Features</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-black mb-6">
+                    Comprehensive Server <span
+                        class="bg-gradient-to-r from-brand-red via-red-500 to-pink-600 bg-clip-text text-transparent">Monitoring</span>
+                </h2>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="space-y-8">
+                    <p class="text-lg text-gray-600 leading-relaxed animate-fade-in-left">
+                        In today's digital landscape, server performance is the backbone of business continuity.
+                        VigilixHub offers comprehensive server monitoring to ensure your systems run smoothly, securely,
+                        and efficiently without unexpected interruptions.
+                    </p>
+
+                    <!-- Hero Image -->
+                    <div class="relative animate-fade-in-left stagger-2">
+                        <div class="hero-image-wrapper glass-card rounded-3xl p-8 overflow-hidden">
+                            <div
+                                class="aspect-square bg-gradient-to-br from-red-50 via-pink-50 to-purple-50 rounded-2xl flex items-center justify-center relative">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-brand-red/10 to-pink-500/10 animate-pulse">
+                                </div>
+                                <i
+                                    class="fa-solid fa-server text-8xl lg:text-9xl text-brand-red relative z-10 animate-float"></i>
+                                <!-- Floating metrics -->
+                                <div class="absolute top-4 right-4 glass-card px-4 py-2 rounded-xl">
+                                    <p class="text-xs font-semibold text-gray-500">CPU</p>
+                                    <p class="text-lg font-black text-green-600">28%</p>
+                                </div>
+                                <div class="absolute bottom-4 left-4 glass-card px-4 py-2 rounded-xl">
+                                    <p class="text-xs font-semibold text-gray-500">Memory</p>
+                                    <p class="text-lg font-black text-blue-600">4.2GB</p>
+                                </div>
+                                <div class="absolute bottom-4 right-4 glass-card px-4 py-2 rounded-xl">
+                                    <p class="text-xs font-semibold text-gray-500">Uptime</p>
+                                    <p class="text-lg font-black text-brand-red">99.9%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Feature Cards -->
+                <div class="space-y-6">
+                    <!-- Feature 1 -->
+                    <div class="feature-card animate-fade-in-right stagger-3 gradient-border">
+                        <div class="flex items-start gap-6 relative z-10">
+                            <div class="flex-shrink-0 icon-wrapper">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-brand-red to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                    <i class="fa-solid fa-gauge-high text-2xl text-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-brand-black mb-3">Real-time Metrics</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Gain visibility into CPU, memory, disk usage, and network performance with instant
+                                    updates and comprehensive monitoring.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card animate-fade-in-right stagger-4 gradient-border">
+                        <div class="flex items-start gap-6 relative z-10">
+                            <div class="flex-shrink-0 icon-wrapper">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                    <i class="fa-solid fa-chart-line text-2xl text-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-brand-black mb-3">Custom Dashboards</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Monitor what matters most with fully customizable views tailored to your specific
+                                    infrastructure needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card animate-fade-in-right stagger-5 gradient-border">
+                        <div class="flex items-start gap-6 relative z-10">
+                            <div class="flex-shrink-0 icon-wrapper">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                    <i class="fa-solid fa-clock-rotate-left text-2xl text-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-brand-black mb-3">Historical Data Analysis</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Make informed decisions with detailed performance trends and comprehensive reports
+                                    spanning months of data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automated Alerts Section -->
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-gray-50 via-red-50/30 to-gray-50 relative overflow-hidden">
+        <!-- Decorative Pattern -->
+        <div class="absolute inset-0 opacity-5"
+            style="background-image: radial-gradient(circle, #DC2626 1px, transparent 1px); background-size: 40px 40px;">
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-50 to-pink-50 border border-red-200/50 mb-6">
+                    <span class="pulse-dot"></span>
+                    <span class="text-brand-red text-sm font-bold uppercase tracking-wider">Stay Informed</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-black mb-6">
+                    Automated <span
+                        class="bg-gradient-to-r from-brand-red via-red-500 to-pink-600 bg-clip-text text-transparent">Alerts</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    At VigilixHub, we understand how crucial server uptime is for your business operations. Even a few
+                    minutes of downtime can lead to disruptions, lost revenue, and frustrated customers. To help you
+                    stay ahead of any issues, we are introducing automated alerts that notify you instantly when your
+                    server goes down.
+                </p>
+            </div>
+
+            <!-- Alert Methods Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Email Alert -->
+                <div class="alert-card glass-card rounded-3xl p-8 text-center animate-fade-in-up stagger-2">
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full blur-2xl opacity-30 animate-pulse">
+                        </div>
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center relative z-10 mx-auto shadow-2xl">
+                            <i class="fa-solid fa-envelope text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-black mb-4">E-Mail</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Email is the most popular way for any notification. Get alerted instantly with detailed incident
+                        reports!
+                    </p>
+                    <div class="mt-6 flex items-center justify-center gap-2 text-sm font-semibold text-blue-600">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>Instant Delivery</span>
+                    </div>
+                </div>
+
+                <!-- SMS Alert -->
+                <div class="alert-card glass-card rounded-3xl p-8 text-center animate-fade-in-up stagger-3">
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full blur-2xl opacity-30 animate-pulse">
+                        </div>
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center relative z-10 mx-auto shadow-2xl">
+                            <i class="fa-solid fa-comment-sms text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-black mb-4">SMS</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Get alerted instantly by SMS, useful when you are offline! Critical notifications delivered to
+                        your phone.
+                    </p>
+                    <div class="mt-6 flex items-center justify-center gap-2 text-sm font-semibold text-green-600">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>24/7 Accessibility</span>
+                    </div>
+                </div>
+
+                <!-- Phone Call Alert -->
+                <div
+                    class="alert-card glass-card rounded-3xl p-8 text-center animate-fade-in-up stagger-4 sm:col-span-2 lg:col-span-1">
+                    <div class="relative inline-block mb-6">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-brand-red to-pink-600 rounded-full blur-2xl opacity-30 animate-pulse">
+                        </div>
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-brand-red to-pink-600 rounded-full flex items-center justify-center relative z-10 mx-auto shadow-2xl">
+                            <i class="fa-solid fa-phone text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-black mb-4">Phone Call</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Get an automated voice call from us whenever your website is down. Immediate attention for
+                        critical issues.
+                    </p>
+                    <div class="mt-6 flex items-center justify-center gap-2 text-sm font-semibold text-brand-red">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>Priority Alerts</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert Features -->
+            <div class="mt-16 max-w-5xl mx-auto">
+                <div class="glass-card rounded-3xl p-8 lg:p-12">
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                        <div class="animate-fade-in-up stagger-5">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fa-solid fa-bolt text-3xl text-white"></i>
+                            </div>
+                            <p class="text-3xl font-black text-brand-black mb-2">&lt;30s</p>
+                            <p class="text-sm text-gray-600 font-semibold">Response Time</p>
+                        </div>
+                        <div class="animate-fade-in-up stagger-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fa-solid fa-shield-halved text-3xl text-white"></i>
+                            </div>
+                            <p class="text-3xl font-black text-brand-black mb-2">100%</p>
+                            <p class="text-sm text-gray-600 font-semibold">Reliability</p>
+                        </div>
+                        <div class="animate-fade-in-up stagger-7">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fa-solid fa-users text-3xl text-white"></i>
+                            </div>
+                            <p class="text-3xl font-black text-brand-black mb-2">Multi</p>
+                            <p class="text-sm text-gray-600 font-semibold">User Support</p>
+                        </div>
+                        <div class="animate-fade-in-up stagger-8">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-brand-red to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <i class="fa-solid fa-sliders text-3xl text-white"></i>
+                            </div>
+                            <p class="text-3xl font-black text-brand-black mb-2">Custom</p>
+                            <p class="text-sm text-gray-600 font-semibold">Alert Rules</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seamless Integration Section -->
+    <section class="py-16 lg:py-24 relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-50 to-pink-50 border border-red-200/50 mb-6">
+                    <span class="pulse-dot"></span>
+                    <span class="text-brand-red text-sm font-bold uppercase tracking-wider">Cross-Platform</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-black mb-6">
+                    Seamless <span
+                        class="bg-gradient-to-r from-brand-red via-red-500 to-pink-600 bg-clip-text text-transparent">Integration</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    VigilixHub integrates with your existing IT ecosystem for streamlined operations. Whether you use
+                    cloud services, virtual machines, or on-premises servers, we've got you covered.
+                </p>
+            </div>
+
+            <!-- Integration Platforms -->
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- macOS -->
+                    <div
+                        class="integration-badge glass-card rounded-2xl p-8 text-center shadow-lg animate-fade-in-up stagger-2">
+                        <div
+                            class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center shadow-xl">
+                            <i class="fa-brands fa-apple text-4xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-black mb-2">macOS</h4>
+                        <p class="text-sm text-gray-500">Full Support</p>
+                    </div>
+
+                    <!-- Windows -->
+                    <div
+                        class="integration-badge glass-card rounded-2xl p-8 text-center shadow-lg animate-fade-in-up stagger-3">
+                        <div
+                            class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-xl">
+                            <i class="fa-brands fa-windows text-4xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-black mb-2">Windows</h4>
+                        <p class="text-sm text-gray-500">Full Support</p>
+                    </div>
+
+                    <!-- Linux -->
+                    <div
+                        class="integration-badge glass-card rounded-2xl p-8 text-center shadow-lg animate-fade-in-up stagger-4">
+                        <div
+                            class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-xl">
+                            <i class="fa-brands fa-linux text-4xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-black mb-2">Linux</h4>
+                        <p class="text-sm text-gray-500">Full Support</p>
+                    </div>
+
+                    <!-- Ubuntu -->
+                    <div
+                        class="integration-badge glass-card rounded-2xl p-8 text-center shadow-lg animate-fade-in-up stagger-5">
+                        <div
+                            class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-xl">
+                            <i class="fa-brands fa-ubuntu text-4xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-black mb-2">Ubuntu</h4>
+                        <p class="text-sm text-gray-500">Full Support</p>
+                    </div>
+                </div>
+
+                <!-- Additional Features -->
+                <div class="mt-16 glass-card rounded-3xl p-8 lg:p-12 animate-fade-in-up stagger-6">
+                    <h3 class="text-2xl lg:text-3xl font-bold text-center text-brand-black mb-8">
+                        Works with Your Entire Stack
+                    </h3>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-brand-red to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="fa-brands fa-aws text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-brand-black">AWS</p>
+                                <p class="text-xs text-gray-500">Cloud Services</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="fa-brands fa-microsoft text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-brand-black">Azure</p>
+                                <p class="text-xs text-gray-500">Microsoft Cloud</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="fa-brands fa-google text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-brand-black">Google Cloud</p>
+                                <p class="text-xs text-gray-500">GCP Platform</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="fa-brands fa-docker text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-brand-black">Docker</p>
+                                <p class="text-xs text-gray-500">Containers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="fa-solid fa-dharmachakra text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-brand-black">Kubernetes</p>
+                                <p class="text-xs text-gray-500">Orchestration</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                                <i class="fa-brands fa-node-js text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-brand-black">Node.js</p>
+                                <p class="text-xs text-gray-500">Runtime</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="mt-16 text-center animate-fade-in-up stagger-7">
+                <div class="inline-flex flex-col sm:flex-row gap-4">
+                    <a href="#"
+                        class="group relative px-8 py-4 bg-gradient-to-r from-brand-red to-red-600 text-white rounded-2xl font-bold shadow-2xl shadow-red-500/50 hover:shadow-red-500/70 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <span class="relative z-10 flex items-center justify-center gap-2">
+                            Get Started Now
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-brand-darkRed to-red-700 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="group px-8 py-4 bg-white text-brand-black border-2 border-gray-200 rounded-2xl font-bold hover:border-brand-red hover:bg-red-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg">
+                        View Documentation
+                        <i class="fa-solid fa-book text-brand-red group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section Starts Here -->
+
+
+    <!-- Testimonial Section Starts Here -->
+    <section class="py-16 lg:py-24 relative overflow-hidden">
+        <!-- Decorative Background Shapes -->
+        <div class="decorative-shape shape-1"></div>
+        <div class="decorative-shape shape-2"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center mb-16 lg:mb-20">
+                <!-- Badge -->
+                <div class="mb-6 animate-fade-in-up">
+                    <span
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-50 to-pink-50 border border-red-200/50">
+                        <span class="pulse-dot"></span>
+                        <span class="text-brand-red text-sm font-bold uppercase tracking-wider">Success Stories</span>
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h2
+                    class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-black mb-6 animate-fade-in-up stagger-1">
+                    Client <span
+                        class="bg-gradient-to-r from-brand-red via-red-500 to-pink-600 bg-clip-text text-transparent">Testimonials</span>
+                </h2>
+
+                <!-- Description -->
+                <p
+                    class="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up stagger-2">
+                    Discover how businesses across industries are achieving remarkable results with VigilixHub
+                </p>
+
+                <!-- Stats Bar -->
+                <div class="mt-12 max-w-4xl mx-auto animate-fade-in-up stagger-3">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <p class="text-4xl font-black text-brand-red mb-2">500+</p>
+                            <p class="text-sm text-gray-600 font-semibold">Happy Clients</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-4xl font-black text-brand-red mb-2">98%</p>
+                            <p class="text-sm text-gray-600 font-semibold">Satisfaction Rate</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-4xl font-black text-brand-red mb-2">5.0</p>
+                            <p class="text-sm text-gray-600 font-semibold">Average Rating</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-4xl font-black text-brand-red mb-2">24/7</p>
+                            <p class="text-sm text-gray-600 font-semibold">Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Testimonial 1: Al Fareeda Super Market -->
+                <div class="testimonial-card animate-fade-in-up stagger-4">
+                    <div class="testimonial-content p-8">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+
+                        <!-- Company Badge -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="industry-icon">
+                                <i class="fa-solid fa-store text-2xl text-brand-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black text-lg">Al Fareeda Super Market</h4>
+                                <p class="text-xs text-gray-500">Retail Industry</p>
+                            </div>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-gray-600 leading-relaxed mb-6 text-base">
+                            "Vigilixhub simplified our marketing with precision. Our campaigns are now well-timed,
+                            highly targeted, and incredibly effective — it feels like having an in-house marketing team
+                            at our fingertips."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <div class="author-avatar">G</div>
+                            <div>
+                                <p class="font-bold text-brand-black">Gobi</p>
+                                <p class="text-sm text-gray-500">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2: Shine Traders -->
+                <div class="testimonial-card animate-fade-in-up stagger-5">
+                    <div class="testimonial-content p-8">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+
+                        <!-- Company Badge -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="industry-icon">
+                                <i class="fa-solid fa-briefcase text-2xl text-brand-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black text-lg">Shine Traders</h4>
+                                <p class="text-xs text-gray-500">Trading Business</p>
+                            </div>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-gray-600 leading-relaxed mb-6 text-base">
+                            "Vigilixhub made marketing stress-free for us. From planning to execution, everything
+                            happens in one place. The precision targeting has helped us reach the right audience every
+                            time."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <p class="font-bold text-brand-black">Sathish</p>
+                                <p class="text-sm text-gray-500">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3: Khan Dental Clinic -->
+                <div class="testimonial-card animate-fade-in-up stagger-6">
+                    <div class="testimonial-content p-8">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+
+                        <!-- Company Badge -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="industry-icon">
+                                <i class="fa-solid fa-tooth text-2xl text-brand-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black text-lg">Khan Dental Clinic</h4>
+                                <p class="text-xs text-gray-500">Healthcare</p>
+                            </div>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-gray-600 leading-relaxed mb-6 text-base">
+                            "VigilixHub helped us attract the right patients consistently. Their campaign strategy and
+                            local targeting significantly improved our appointment bookings while maintaining a
+                            professional brand image."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <div class="author-avatar">D</div>
+                            <div>
+                                <p class="font-bold text-brand-black">Dr. Sharmi Jahan MS</p>
+                                <p class="text-sm text-gray-500">Dentist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4: NxtEye -->
+                <div class="testimonial-card animate-fade-in-up stagger-7">
+                    <div class="testimonial-content p-8">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+
+                        <!-- Company Badge -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="industry-icon">
+                                <i class="fa-solid fa-eye text-2xl text-brand-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black text-lg">NxtEye</h4>
+                                <p class="text-xs text-gray-500">Vision Care</p>
+                            </div>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-gray-600 leading-relaxed mb-6 text-base">
+                            "From brand visibility to lead generation, VigilixHub delivered measurable growth. Their
+                            strategy and creative execution brought in high-intent customers and strong ROI."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <p class="font-bold text-brand-black">Ravivarmani</p>
+                                <p class="text-sm text-gray-500">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5: Bharathi Manpowers -->
+                <div class="testimonial-card animate-slide-in-left stagger-4">
+                    <div class="testimonial-content p-8">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+
+                        <!-- Company Badge -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="industry-icon">
+                                <i class="fa-solid fa-users text-2xl text-brand-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black text-lg">Bharathi Manpowers</h4>
+                                <p class="text-xs text-gray-500">Recruitment</p>
+                            </div>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-gray-600 leading-relaxed mb-6 text-base">
+                            "VigilixHub transformed our website into a strong recruitment engine. The clear structure,
+                            optimized content, and user-focused design now help us attract and convert qualified
+                            candidates faster."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <p class="font-bold text-brand-black">Ravivarman</p>
+                                <p class="text-sm text-gray-500">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6: Kavinyash Constructions -->
+                <div class="testimonial-card animate-slide-in-right stagger-5">
+                    <div class="testimonial-content p-8">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+
+                        <!-- Company Badge -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="industry-icon">
+                                <i class="fa-solid fa-building text-2xl text-brand-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black text-lg">Kavinyash Constructions</h4>
+                                <p class="text-xs text-gray-500">Real Estate</p>
+                            </div>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-gray-600 leading-relaxed mb-6 text-base">
+                            "VigilixHub elevated our digital presence with consistent branding and targeted campaigns.
+                            Our projects now reach serious buyers and investors at the right time."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <p class="font-bold text-brand-black">Er. Saravanan</p>
+                                <p class="text-sm text-gray-500">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 7: Yudhi Builders -->
+                <div class="testimonial-card animate-fade-in-up stagger-6">
+                    <div class="testimonial-content p-8">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+
+                        <!-- Company Badge -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="industry-icon">
+                                <i class="fa-solid fa-hammer text-2xl text-brand-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black text-lg">Yudhi Builders</h4>
+                                <p class="text-xs text-gray-500">Construction</p>
+                            </div>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <p class="text-gray-600 leading-relaxed mb-6 text-base">
+                            "VigilixHub crafted a logo that clearly reflects our brand identity and vision. The design
+                            strengthened our professional image and improved brand recall across platforms."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                            <div class="author-avatar">L</div>
+                            <div>
+                                <p class="font-bold text-brand-black">Er. Lakshmikanth</p>
+                                <p class="text-sm text-gray-500">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer
+        class=" bg-gradient-to-br from-brand-black via-gray-900 to-brand-black text-white relative overflow-hidden
+                            pt-20 pb-8">
+
+                            <!-- Top Accent Line -->
+                            <div class="absolute top-0 left-0 w-full h-1 shimmer-line"></div>
+
+                            <!-- Animated Background Elements -->
+                            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                                <div
+                                    class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-brand-red/15 to-orange-500/10 rounded-full blur-[150px] float-animation">
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-600/10 to-pink-500/10 rounded-full blur-[120px] float-animation"
+                                    style="animation-delay: 1s;"></div>
+                                <div class="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-blue-600/10 to-cyan-500/10 rounded-full blur-[120px] float-animation"
+                                    style="animation-delay: 2s;"></div>
+
+                                <!-- Grid Pattern -->
+                                <div
+                                    class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40">
+                                </div>
+                            </div>
+
+                            <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+                                <!-- Main Footer Content -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+                                    <!-- Company Info -->
+                                    <div class="space-y-6 animate-slide-up stagger-1">
+                                        <a href="#" class="inline-block logo-glow">
+                                            <div class="flex items-center gap-3">
+                                                <div
+                                                    class="w-16 h-16 bg-gradient-to-br from-brand-red to-orange-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-brand-red/50 glow-animation">
+                                                    <i class="fa-solid fa-briefcase text-white text-2xl"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="text-2xl font-black tracking-tight gradient-text">
+                                                        VigilixHub
+                                                    </div>
+                                                    <div class="text-xs text-gray-400 font-semibold">Manpower Solutions
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <p class="text-gray-400 text-sm leading-relaxed">
+                                            Redefining manpower solutions with <span
+                                                class="text-brand-red font-semibold">speed,
+                                                precision,
+                                                and trust</span>. Connecting top-tier talent with industry leaders since
+                                            2025.
+                                        </p>
+
+                                        <!-- Social Icons -->
+                                        <div class="flex gap-3">
+                                            <a href="#"
+                                                class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                                                <i
+                                                    class="fa-brands fa-linkedin-in text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                                                <i
+                                                    class="fa-brands fa-twitter text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                                                <i
+                                                    class="fa-brands fa-instagram text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                                                <i
+                                                    class="fa-brands fa-facebook-f text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                                            </a>
+                                        </div>
+
+                                        <!-- Trust Badge -->
+                                        <div
+                                            class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-lg">
+                                            <i class="fa-solid fa-shield-halved text-green-500"></i>
+                                            <span class="text-xs font-bold text-green-400">Trusted by 500+
+                                                Companies</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Useful Links -->
+                                    <div class="animate-slide-up stagger-2">
+                                        <h4 class="text-xl font-black mb-6 flex items-center gap-3">
+                                            <span class="w-2 h-2 rounded-full bg-brand-red glow-animation"></span>
+                                            <span class="gradient-text">Useful Links</span>
+                                        </h4>
+                                        <ul class="space-y-4">
+                                            <li>
+                                                <a href="#"
+                                                    class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                                    <i
+                                                        class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                                    About Us
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                                    <i
+                                                        class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                                    Our Services
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                                    <i
+                                                        class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                                    Find Jobs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                                    <i
+                                                        class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                                    Career Guidance
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                                    <i
+                                                        class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                                    Contact Support
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                                    <i
+                                                        class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                                    Privacy Policy
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Contact Info -->
+                                    <div class="animate-slide-up stagger-3">
+                                        <h4 class="text-xl font-black mb-6 flex items-center gap-3">
+                                            <span class="w-2 h-2 rounded-full bg-brand-red glow-animation"></span>
+                                            <span class="gradient-text">Get in Touch</span>
+                                        </h4>
+                                        <ul class="space-y-5">
+                                            <li class="contact-item flex items-start gap-3 p-2 -ml-2 transition-all">
+                                                <div
+                                                    class="w-10 h-10 bg-gradient-to-br from-brand-red/20 to-orange-500/20 rounded-lg flex items-center justify-center shrink-0 icon-pulse">
+                                                    <i class="fa-solid fa-location-dot text-brand-red"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="text-xs text-gray-500 font-semibold uppercase mb-1">
+                                                        Address
+                                                    </div>
+                                                    <span class="text-sm text-gray-300">123, Anna Salai,
+                                                        Guindy,<br>Chennai -
+                                                        600032,
+                                                        India</span>
+                                                </div>
+                                            </li>
+                                            <li class="contact-item flex items-center gap-3 p-2 -ml-2 transition-all">
+                                                <div
+                                                    class="w-10 h-10 bg-gradient-to-br from-brand-red/20 to-orange-500/20 rounded-lg flex items-center justify-center shrink-0 icon-pulse">
+                                                    <i class="fa-solid fa-phone text-brand-red"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="text-xs text-gray-500 font-semibold uppercase mb-1">
+                                                        Phone</div>
+                                                    <span class="text-sm text-gray-300 font-semibold">+91 98765
+                                                        43210</span>
+                                                </div>
+                                            </li>
+                                            <li class="contact-item flex items-center gap-3 p-2 -ml-2 transition-all">
+                                                <div
+                                                    class="w-10 h-10 bg-gradient-to-br from-brand-red/20 to-orange-500/20 rounded-lg flex items-center justify-center shrink-0 icon-pulse">
+                                                    <i class="fa-solid fa-envelope text-brand-red"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="text-xs text-gray-500 font-semibold uppercase mb-1">
+                                                        Email</div>
+                                                    <span
+                                                        class="text-sm text-gray-300 font-semibold">hello@vigilixhub.com</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Newsletter -->
+                                    <div class="animate-slide-up stagger-4">
+                                        <h4 class="text-xl font-black mb-6 flex items-center gap-3">
+                                            <span class="w-2 h-2 rounded-full bg-brand-red glow-animation"></span>
+                                            <span class="gradient-text">Stay Updated</span>
+                                        </h4>
+                                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                                            Subscribe to get latest job alerts, industry news, and exclusive
+                                            opportunities.
+                                        </p>
+
+                                        <form class="space-y-4 rotating-border">
+                                            <div class="relative">
+                                                <input type="email" placeholder="Enter your email address"
+                                                    class="newsletter-input w-full bg-white/5 border-2 border-white/10 rounded-xl py-4 pl-12 pr-4 text-sm text-white placeholder-gray-500 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all">
+                                                <i
+                                                    class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+                                            </div>
+                                            <button type="button"
+                                                class="w-full py-4 bg-gradient-to-r from-brand-red to-orange-600 text-white font-bold rounded-xl hover:shadow-2xl hover:shadow-brand-red/50 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 group">
+                                                <i
+                                                    class="fa-solid fa-paper-plane transform group-hover:translate-x-1 transition-transform"></i>
+                                                <span>Subscribe Now</span>
+                                            </button>
+                                        </form>
+
+                                        <div class="mt-6 flex items-center gap-2 text-xs text-gray-500">
+                                            <i class="fa-solid fa-lock"></i>
+                                            <span>We respect your privacy. Unsubscribe anytime.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Stats Bar -->
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                                    <div
+                                        class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                                        <div class="text-3xl font-black gradient-text mb-2">500+</div>
+                                        <div class="text-xs text-gray-400 font-semibold uppercase">Happy Clients</div>
+                                    </div>
+                                    <div
+                                        class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                                        <div class="text-3xl font-black gradient-text mb-2">10K+</div>
+                                        <div class="text-xs text-gray-400 font-semibold uppercase">Jobs Filled</div>
+                                    </div>
+                                    <div
+                                        class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                                        <div class="text-3xl font-black gradient-text mb-2">95%</div>
+                                        <div class="text-xs text-gray-400 font-semibold uppercase">Satisfaction Rate
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                                        <div class="text-3xl font-black gradient-text mb-2">24/7</div>
+                                        <div class="text-xs text-gray-400 font-semibold uppercase">Support Available
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bottom Bar -->
+                                <div class="pt-8 border-t border-white/10">
+                                    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                                        <div class="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
+                                            <span class="flex items-center gap-2">
+                                                <i class="fa-regular fa-copyright text-brand-red"></i>
+                                                2025 VigilixHub Manpower. All rights reserved.
+                                            </span>
+                                            <span class="hidden md:block text-gray-600">|</span>
+                                            <span class="flex items-center gap-2">
+                                                <i class="fa-solid fa-heart text-brand-red"></i>
+                                                Built with passion in Chennai
+                                            </span>
+                                        </div>
+
+                                        <div class="flex items-center gap-6">
+                                            <a href="#"
+                                                class="text-sm text-gray-400 hover:text-white transition-colors wave-animation">Terms
+                                                of
+                                                Service</a>
+                                            <span class="text-gray-600">•</span>
+                                            <a href="#"
+                                                class="text-sm text-gray-400 hover:text-white transition-colors wave-animation">Cookie
+                                                Policy</a>
+                                            <span class="text-gray-600">•</span>
+                                            <a href="#"
+                                                class="text-sm text-gray-400 hover:text-white transition-colors wave-animation">Sitemap</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Back to Top Button -->
+                                    <div class="mt-8 text-center">
+                                        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                                            class="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-brand-red border border-white/10 hover:border-brand-red rounded-xl text-sm font-semibold text-gray-400 hover:text-white transition-all duration-300 group">
+                                            <span>Back to Top</span>
+                                            <i
+                                                class="fa-solid fa-arrow-up transform group-hover:-translate-y-1 transition-transform"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </footer>
+                            <!-- Footer Section Ends Here -->
+
+
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                            <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
