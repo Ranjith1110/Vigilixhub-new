@@ -1279,7 +1279,63 @@ body {
 
 
 /* Testimonial Section Styles */
-/* --- Custom Animations & Gradients --- */
+/* --- New Logo Marquee Styles --- */
+
+/* Infinite Scroll Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+}
+
+/* Pause on hover for better UX */
+.logo-marquee-mask:hover .animate-scroll {
+    animation-play-state: paused;
+}
+
+/* Fade Effect on Left & Right Edges using Mask Image */
+.logo-marquee-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Logo Styling */
+.client-logo {
+    height: 40px;
+    /* Default height */
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    /* Make logos grayscale initially */
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Logo Hover Effect */
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Tablet/Desktop height adjustment */
+@media (min-width: 768px) {
+    .client-logo {
+        height: 50px;
+    }
+}
+
+/* --- Keep your Existing Styles Below --- */
 .gradient-text {
     background: linear-gradient(135deg, #DC2626 0%, #EF4444 50%, #F87171 100%);
     -webkit-background-clip: text;
@@ -1347,12 +1403,10 @@ body {
     border-color: rgba(220, 38, 38, 0.2);
 }
 
-/* --- Testimonial Cards (Neat Layout) --- */
+/* --- Testimonial Cards --- */
 .swiper-slide {
     height: auto;
-    /* Vital for equal height cards */
     padding-bottom: 50px;
-    /* Space for shadow/hover movement */
 }
 
 .testimonial-card {
@@ -1360,7 +1414,6 @@ body {
     border-radius: 24px;
     padding: 2.5rem;
     height: 100%;
-    /* Fill slide height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1377,7 +1430,6 @@ body {
     border-color: rgba(220, 38, 38, 0.1);
 }
 
-/* Subtle Gradient Overlay on Hover */
 .testimonial-card::before {
     content: '';
     position: absolute;
@@ -1392,14 +1444,12 @@ body {
     opacity: 1;
 }
 
-/* Quote Icon */
 .quote-icon {
     position: absolute;
     top: 2rem;
     right: 2rem;
     font-size: 4rem;
     color: #FEE2E2;
-    /* Very light red */
     transition: all 0.3s ease;
 }
 
@@ -1408,7 +1458,6 @@ body {
     transform: rotate(-10deg) scale(1.1);
 }
 
-/* Company Icon Wrapper */
 .icon-box {
     width: 56px;
     height: 56px;
@@ -1427,7 +1476,6 @@ body {
     background: #FEE2E2;
 }
 
-/* Avatar */
 .avatar {
     width: 48px;
     height: 48px;
@@ -1443,7 +1491,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Swiper Controls --- */
 .testimonial-swiper {
     padding: 20px 20px 60px !important;
 }
@@ -1495,7 +1542,6 @@ body {
     right: 10px;
 }
 
-/* Hide arrows on mobile for neatness */
 @media (max-width: 640px) {
     .custom-nav-btn {
         display: none;
