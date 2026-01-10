@@ -663,33 +663,9 @@ body {
     }
 }
 
-@keyframes shimmer {
-    0% {
-        background-position: -1000px 0;
-    }
-
-    100% {
-        background-position: 1000px 0;
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .animate-fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
-}
-
-.animate-float {
-    animation: float 3s ease-in-out infinite;
 }
 
 .service-card {
@@ -700,6 +676,8 @@ body {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     border: 2px solid transparent;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card::before {
@@ -727,8 +705,8 @@ body {
 
 .service-icon-wrapper {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
     transition: transform 0.5s ease;
 }
@@ -740,7 +718,7 @@ body {
 .service-icon-bg {
     position: absolute;
     inset: 0;
-    border-radius: 24px;
+    border-radius: 20px;
     background: linear-gradient(135deg, #DC2626, #EF4444);
     opacity: 0.1;
     transition: all 0.5s ease;
@@ -759,16 +737,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background: linear-gradient(135deg, #DC2626, #EF4444, #F87171);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.5s ease;
-}
-
-.service-card:hover .service-icon {
-    transform: scale(1.1);
 }
 
 .service-overlay {
@@ -782,6 +756,8 @@ body {
     transform: translateY(100%);
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 10;
+    height: auto;
+    max-height: 100%;
 }
 
 .service-card:hover .service-overlay {
@@ -793,6 +769,7 @@ body {
     z-index: 1;
     padding: 2rem;
     text-align: center;
+    flex-grow: 1;
 }
 
 .section-badge {
@@ -808,7 +785,6 @@ body {
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    animation: fadeInUp 0.8s ease-out;
 }
 
 .pulse-dot {
@@ -841,46 +817,6 @@ body {
         transform: scale(2);
         opacity: 0;
     }
-}
-
-.stagger-1 {
-    animation-delay: 0.1s;
-}
-
-.stagger-2 {
-    animation-delay: 0.2s;
-}
-
-.stagger-3 {
-    animation-delay: 0.3s;
-}
-
-.stagger-4 {
-    animation-delay: 0.4s;
-}
-
-.stagger-5 {
-    animation-delay: 0.5s;
-}
-
-.stagger-6 {
-    animation-delay: 0.6s;
-}
-
-.stagger-7 {
-    animation-delay: 0.7s;
-}
-
-.stagger-8 {
-    animation-delay: 0.8s;
-}
-
-.stagger-9 {
-    animation-delay: 0.9s;
-}
-
-.stagger-10 {
-    animation-delay: 1s;
 }
 
 .grid-pattern {
@@ -932,6 +868,39 @@ body {
     border-radius: 20% 80% 80% 20% / 20% 20% 80% 80%;
     animation: float 7s ease-in-out infinite;
     animation-delay: 2s;
+}
+
+/* Stagger Animations */
+.stagger-1 {
+    animation-delay: 0.1s;
+}
+
+.stagger-2 {
+    animation-delay: 0.2s;
+}
+
+.stagger-3 {
+    animation-delay: 0.3s;
+}
+
+.stagger-4 {
+    animation-delay: 0.4s;
+}
+
+.stagger-5 {
+    animation-delay: 0.5s;
+}
+
+.stagger-6 {
+    animation-delay: 0.6s;
+}
+
+.stagger-7 {
+    animation-delay: 0.7s;
+}
+
+.stagger-10 {
+    animation-delay: 1s;
 }
 
 /* Service Section Styles End */
