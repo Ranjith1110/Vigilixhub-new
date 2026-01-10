@@ -627,6 +627,7 @@ body {
 
 
 /* Service Section Styles */
+/* Service Section Styles */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -668,6 +669,7 @@ body {
     opacity: 0;
 }
 
+/* Base Card Style (Used for Light Sections) */
 .service-card {
     position: relative;
     background: white;
@@ -680,7 +682,14 @@ body {
     flex-direction: column;
 }
 
-.service-card::before {
+/* Light Card Hover Effects */
+.service-card:not(.dark-theme):hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: #DC2626;
+    box-shadow: 0 20px 60px rgba(220, 38, 38, 0.25);
+}
+
+.service-card:not(.dark-theme):before {
     content: '';
     position: absolute;
     top: 0;
@@ -693,16 +702,30 @@ body {
     z-index: 0;
 }
 
-.service-card:hover::before {
+.service-card:not(.dark-theme):hover::before {
     opacity: 1;
 }
 
-.service-card:hover {
-    transform: translateY(-12px) scale(1.02);
-    border-color: #DC2626;
-    box-shadow: 0 20px 60px rgba(220, 38, 38, 0.25);
+/* =========================================
+   DARK THEME CARD STYLES (New Unique Section)
+   ========================================= */
+.service-card.dark-theme {
+    background: #18181b;
+    /* Dark Gray (Zinc-900 approx) */
+    border: 1px solid #333;
 }
 
+.service-card.dark-theme:hover {
+    transform: translateY(-12px);
+    border-color: #ef4444;
+    /* Red Border on Hover */
+    box-shadow: 0 10px 40px rgba(220, 38, 38, 0.4);
+    /* Stronger red glow */
+    background: #202022;
+    /* Slightly lighter on hover */
+}
+
+/* Icons */
 .service-icon-wrapper {
     position: relative;
     width: 80px;
@@ -722,6 +745,11 @@ body {
     background: linear-gradient(135deg, #DC2626, #EF4444);
     opacity: 0.1;
     transition: all 0.5s ease;
+}
+
+/* Adjust icon bg opacity for dark theme so it pops more */
+.service-card.dark-theme .service-icon-bg {
+    opacity: 0.15;
 }
 
 .service-card:hover .service-icon-bg {
@@ -745,12 +773,14 @@ body {
     transition: all 0.5s ease;
 }
 
+/* Overlay (Works for both, creates the red slide-up) */
 .service-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(220, 38, 38, 0.98), rgba(239, 68, 68, 0.95));
+    background: linear-gradient(to top, rgba(185, 28, 28, 0.98), rgba(220, 38, 38, 0.95));
+    /* Slightly deeper red for dark theme context */
     color: white;
     padding: 1.5rem;
     transform: translateY(100%);
@@ -772,6 +802,7 @@ body {
     flex-grow: 1;
 }
 
+/* Section Badge */
 .section-badge {
     display: inline-flex;
     align-items: center;
