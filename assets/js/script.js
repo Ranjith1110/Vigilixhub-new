@@ -88,3 +88,47 @@ function toggleAccordion(id) {
 window.addEventListener('DOMContentLoaded', () => {
     toggleAccordion('acc1');
 });
+
+
+const swiper = new Swiper('.testimonial-swiper', {
+    loop: true,
+    grabCursor: true,
+    speed: 800,
+    spaceBetween: 24, // Consistent Gap
+
+    // Autoplay configuration
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+
+    // Pagination configuration
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+
+    // Navigation configuration
+    navigation: {
+        nextEl: '.swiper-button-next-custom',
+        prevEl: '.swiper-button-prev-custom',
+    },
+
+    // Strict Breakpoints as requested
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    }
+});

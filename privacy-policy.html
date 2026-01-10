@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VigilixHub Manpower</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/terms.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0f0f0f',
+                            red: '#D90429',
+                            darkRed: '#8D0801',
+                            gray: '#F3F4F6'
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-brand-black overflow-x-hidden antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Top Bar -->
+    <div
+        class="bg-gradient-to-r from-brand-black via-gray-900 to-brand-black text-white text-xs py-2.5 hidden md:block relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse-subtle">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center relative z-10">
+            <div class="flex items-center space-x-6">
+                <a href="tel:+919876543210"
+                    class="group flex items-center gap-2 hover:text-brand-red transition-all duration-300 cursor-pointer">
+                    <div
+                        class="w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center group-hover:bg-brand-red/30 transition-all">
+                        <i
+                            class="fa-solid fa-phone text-brand-red text-[10px] group-hover:rotate-12 transition-transform"></i>
+                    </div>
+                    <span class="font-medium">+91 7868043538</span>
+                </a>
+                <a href="mailto:info@vhub.com"
+                    class="group flex items-center gap-2 hover:text-brand-red transition-all duration-300 cursor-pointer">
+                    <div
+                        class="w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center group-hover:bg-brand-red/30 transition-all">
+                        <i class="fa-solid fa-envelope text-brand-red text-[10px]"></i>
+                    </div>
+                    <span class="font-medium">support@vigilixhub.in</span>
+                </a>
+                <span class="flex items-center gap-2 text-gray-400">
+                    <i class="fa-solid fa-location-dot text-brand-red text-[10px]"></i>
+                    <span>Ramanathapuram, India</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-gray-400 font-medium">Connect with us:</span>
+                <div class="flex space-x-2">
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-twitter text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav id="navbar" class="sticky top-0 z-50 glass-nav transition-all duration-500 animate-slide-down">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 lg:h-24">
+
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 z-50 group">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-brand-red to-pink-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300">
+                        </div>
+                        <img class="w-20" src="/assets/images/vHub-logo.svg" alt="">
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="#"
+                        class="nav-link px-5 py-2 text-sm font-semibold text-gray-700 hover:text-brand-red transition-colors">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="nav-link px-5 py-2 text-sm font-semibold text-gray-700 hover:text-brand-red transition-colors">
+                        About Us
+                    </a>
+                    <a href="#"
+                        class="nav-link px-5 py-2 text-sm font-semibold text-gray-700 hover:text-brand-red transition-colors">
+                        Services
+                    </a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="#"
+                        class="group relative px-6 py-2.5 bg-gradient-to-r from-brand-red to-red-600 text-white rounded-xl text-sm font-bold overflow-hidden shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 hover:-translate-y-0.5">
+                        <span class="relative z-10 flex items-center gap-2">
+                            Contact Us
+                            <i
+                                class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-brand-darkRed to-red-700 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="lg:hidden relative z-50 p-2 text-brand-black hover:text-brand-red transition-colors">
+                    <div class="menu-icon text-current">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="progress-bar"
+            class="h-0.5 bg-gradient-to-r from-brand-red via-pink-500 to-red-600 transform origin-left scale-x-0 transition-transform duration-300">
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-black/40 backdrop-blur-md z-40 opacity-0 invisible transition-all duration-500"></div>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar"
+        class="fixed top-0 right-0 h-full w-full sm:w-[85%] sm:max-w-md bg-white z-50 transform translate-x-full transition-all duration-500 shadow-2xl flex flex-col">
+
+        <!-- Sidebar Header -->
+        <div class="relative p-6 bg-gradient-to-r from-brand-red to-pink-600 text-white">
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 20px 20px;">
+            </div>
+            <div class="relative flex justify-between items-center">
+                <div>
+                    <h2 class="text-2xl font-black">Menu</h2>
+                    <p class="text-sm text-white/80 font-medium mt-0.5">Navigate vHub</p>
+                </div>
+                <button id="close-menu-btn"
+                    class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-all hover:rotate-90 duration-300">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar Links -->
+        <div id="mobile-links-container"
+            class="flex-1 p-6 space-y-2 overflow-y-auto bg-gradient-to-b from-white to-gray-50">
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-100 to-pink-100 flex items-center justify-center text-brand-red group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <span>Home</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <span>Services</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <span>Find Jobs</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center text-purple-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span>Find Employees</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+
+            <a href="#"
+                class="mobile-link group flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 font-semibold text-gray-700 hover:text-brand-red transition-all duration-300 shadow-sm hover:shadow-md border border-gray-100">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center text-orange-600 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-info-circle"></i>
+                    </div>
+                    <span>About Us</span>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-right text-xs text-gray-400 group-hover:translate-x-1 group-hover:text-brand-red transition-all"></i>
+            </a>
+        </div>
+
+        <!-- Sidebar Footer -->
+        <div class="p-6 bg-gradient-to-r from-gray-900 to-brand-black space-y-3">
+            <a href="#"
+                class="block w-full py-3.5 bg-white text-brand-black text-center rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-2">
+                <i class="fa-solid fa-user-circle"></i>
+                Login / Register
+            </a>
+            <a href="#"
+                class="block w-full py-3.5 bg-gradient-to-r from-brand-red to-red-600 text-white text-center rounded-xl font-bold hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                Contact Support
+            </a>
+            <div class="flex items-center justify-center gap-3 pt-3">
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-xl bg-white/10 hover:bg-brand-red flex items-center justify-center transition-all text-white hover:scale-110">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Ends Here -->
+
+
+
+    
+
+
+
+    <!-- Footer Section -->
+    <footer class=" bg-gradient-to-br from-brand-black via-gray-900 to-brand-black text-white relative overflow-hidden
+                                    pt-20 pb-8">
+
+        <!-- Top Accent Line -->
+        <div class="absolute top-0 left-0 w-full h-1 shimmer-line"></div>
+
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div
+                class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-brand-red/15 to-orange-500/10 rounded-full blur-[150px] float-animation">
+            </div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-600/10 to-pink-500/10 rounded-full blur-[120px] float-animation"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-blue-600/10 to-cyan-500/10 rounded-full blur-[120px] float-animation"
+                style="animation-delay: 2s;"></div>
+
+            <!-- Grid Pattern -->
+            <div
+                class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+                <!-- Company Info -->
+                <div class="space-y-6 animate-slide-up stagger-1">
+                    <a href="#" class="inline-block logo-glow">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-brand-red to-orange-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-brand-red/50 glow-animation">
+                                <i class="fa-solid fa-briefcase text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black tracking-tight gradient-text">
+                                    VigilixHub
+                                </div>
+                                <div class="text-xs text-gray-400 font-semibold">Manpower
+                                    Solutions
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Redefining manpower solutions with <span class="text-brand-red font-semibold">speed,
+                            precision,
+                            and trust</span>. Connecting top-tier talent with industry
+                        leaders since
+                        2025.
+                    </p>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                            <i
+                                class="fa-brands fa-linkedin-in text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                            <i
+                                class="fa-brands fa-twitter text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                            <i
+                                class="fa-brands fa-instagram text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                        </a>
+                        <a href="#"
+                            class="social-icon w-12 h-12 rounded-xl glass-effect border border-white/10 hover:border-brand-red flex items-center justify-center group">
+                            <i
+                                class="fa-brands fa-facebook-f text-gray-400 group-hover:text-white text-lg transition-colors"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-lg">
+                        <i class="fa-solid fa-shield-halved text-green-500"></i>
+                        <span class="text-xs font-bold text-green-400">Trusted by 500+
+                            Companies</span>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="animate-slide-up stagger-2">
+                    <h4 class="text-xl font-black mb-6 flex items-center gap-3">
+                        <span class="w-2 h-2 rounded-full bg-brand-red glow-animation"></span>
+                        <span class="gradient-text">Useful Links</span>
+                    </h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#"
+                                class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Our Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Find Jobs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Career Guidance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Contact Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-hover text-gray-400 text-sm font-medium flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs text-brand-red opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="animate-slide-up stagger-3">
+                    <h4 class="text-xl font-black mb-6 flex items-center gap-3">
+                        <span class="w-2 h-2 rounded-full bg-brand-red glow-animation"></span>
+                        <span class="gradient-text">Get in Touch</span>
+                    </h4>
+                    <ul class="space-y-5">
+                        <li class="contact-item flex items-start gap-3 p-2 -ml-2 transition-all">
+                            <div
+                                class="w-10 h-10 bg-gradient-to-br from-brand-red/20 to-orange-500/20 rounded-lg flex items-center justify-center shrink-0 icon-pulse">
+                                <i class="fa-solid fa-location-dot text-brand-red"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-semibold uppercase mb-1">
+                                    Address
+                                </div>
+                                <span class="text-sm text-gray-300">123, Anna Salai,
+                                    Guindy,<br>Chennai -
+                                    600032,
+                                    India</span>
+                            </div>
+                        </li>
+                        <li class="contact-item flex items-center gap-3 p-2 -ml-2 transition-all">
+                            <div
+                                class="w-10 h-10 bg-gradient-to-br from-brand-red/20 to-orange-500/20 rounded-lg flex items-center justify-center shrink-0 icon-pulse">
+                                <i class="fa-solid fa-phone text-brand-red"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-semibold uppercase mb-1">
+                                    Phone</div>
+                                <span class="text-sm text-gray-300 font-semibold">+91 98765
+                                    43210</span>
+                            </div>
+                        </li>
+                        <li class="contact-item flex items-center gap-3 p-2 -ml-2 transition-all">
+                            <div
+                                class="w-10 h-10 bg-gradient-to-br from-brand-red/20 to-orange-500/20 rounded-lg flex items-center justify-center shrink-0 icon-pulse">
+                                <i class="fa-solid fa-envelope text-brand-red"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-500 font-semibold uppercase mb-1">
+                                    Email</div>
+                                <span class="text-sm text-gray-300 font-semibold">hello@vigilixhub.com</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="animate-slide-up stagger-4">
+                    <h4 class="text-xl font-black mb-6 flex items-center gap-3">
+                        <span class="w-2 h-2 rounded-full bg-brand-red glow-animation"></span>
+                        <span class="gradient-text">Stay Updated</span>
+                    </h4>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Subscribe to get latest job alerts, industry news, and exclusive
+                        opportunities.
+                    </p>
+
+                    <form class="space-y-4 rotating-border">
+                        <div class="relative">
+                            <input type="email" placeholder="Enter your email address"
+                                class="newsletter-input w-full bg-white/5 border-2 border-white/10 rounded-xl py-4 pl-12 pr-4 text-sm text-white placeholder-gray-500 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all">
+                            <i class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+                        </div>
+                        <button type="button"
+                            class="w-full py-4 bg-gradient-to-r from-brand-red to-orange-600 text-white font-bold rounded-xl hover:shadow-2xl hover:shadow-brand-red/50 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 group">
+                            <i
+                                class="fa-solid fa-paper-plane transform group-hover:translate-x-1 transition-transform"></i>
+                            <span>Subscribe Now</span>
+                        </button>
+                    </form>
+
+                    <div class="mt-6 flex items-center gap-2 text-xs text-gray-500">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>We respect your privacy. Unsubscribe anytime.</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                <div class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="text-3xl font-black gradient-text mb-2">500+</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase">Happy Clients
+                    </div>
+                </div>
+                <div class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="text-3xl font-black gradient-text mb-2">10K+</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase">Jobs Filled
+                    </div>
+                </div>
+                <div class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="text-3xl font-black gradient-text mb-2">95%</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase">Satisfaction
+                        Rate
+                    </div>
+                </div>
+                <div class="footer-card glass-effect p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="text-3xl font-black gradient-text mb-2">24/7</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase">Support
+                        Available
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-white/10">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-regular fa-copyright text-brand-red"></i>
+                            2025 VigilixHub Manpower. All rights reserved.
+                        </span>
+                        <span class="hidden md:block text-gray-600">|</span>
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-heart text-brand-red"></i>
+                            Built with passion in Chennai
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-6">
+                        <a href="#"
+                            class="text-sm text-gray-400 hover:text-white transition-colors wave-animation">Terms
+                            of
+                            Service</a>
+                        <span class="text-gray-600">•</span>
+                        <a href="#"
+                            class="text-sm text-gray-400 hover:text-white transition-colors wave-animation">Cookie
+                            Policy</a>
+                        <span class="text-gray-600">•</span>
+                        <a href="#"
+                            class="text-sm text-gray-400 hover:text-white transition-colors wave-animation">Sitemap</a>
+                    </div>
+                </div>
+
+                <!-- Back to Top Button -->
+                <div class="mt-8 text-center">
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-brand-red border border-white/10 hover:border-brand-red rounded-xl text-sm font-semibold text-gray-400 hover:text-white transition-all duration-300 group">
+                        <span>Back to Top</span>
+                        <i class="fa-solid fa-arrow-up transform group-hover:-translate-y-1 transition-transform"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
